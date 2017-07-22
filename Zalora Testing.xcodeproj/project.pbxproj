@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FDCEBA1F22EC25001D62C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEB91F22EC25001D62C5 /* AppDelegate.swift */; };
+		04FDCEBC1F22EC25001D62C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEBB1F22EC25001D62C5 /* ViewController.swift */; };
+		04FDCEBF1F22EC25001D62C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCEBD1F22EC25001D62C5 /* Main.storyboard */; };
+		04FDCEC11F22EC25001D62C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCEC01F22EC25001D62C5 /* Assets.xcassets */; };
+		04FDCEC41F22EC25001D62C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCEC21F22EC25001D62C5 /* LaunchScreen.storyboard */; };
+		04FDCECF1F22EC25001D62C5 /* Zalora_TestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCECE1F22EC25001D62C5 /* Zalora_TestingTests.swift */; };
+		04FDCEDA1F22EC25001D62C5 /* Zalora_TestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCED91F22EC25001D62C5 /* Zalora_TestingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FDCECB1F22EC25001D62C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FDCEAE1F22EC25001D62C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FDCEB51F22EC25001D62C5;
+			remoteInfo = "Zalora Testing";
+		};
+		04FDCED61F22EC25001D62C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FDCEAE1F22EC25001D62C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FDCEB51F22EC25001D62C5;
+			remoteInfo = "Zalora Testing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FDCEB61F22EC25001D62C5 /* Zalora Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zalora Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDCEB91F22EC25001D62C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04FDCEBB1F22EC25001D62C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04FDCEBE1F22EC25001D62C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04FDCEC01F22EC25001D62C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FDCEC31F22EC25001D62C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04FDCEC51F22EC25001D62C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FDCECA1F22EC25001D62C5 /* Zalora TestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zalora TestingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDCECE1F22EC25001D62C5 /* Zalora_TestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zalora_TestingTests.swift; sourceTree = "<group>"; };
+		04FDCED01F22EC25001D62C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FDCED51F22EC25001D62C5 /* Zalora TestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zalora TestingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDCED91F22EC25001D62C5 /* Zalora_TestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zalora_TestingUITests.swift; sourceTree = "<group>"; };
+		04FDCEDB1F22EC25001D62C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FDCEB31F22EC25001D62C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCEC71F22EC25001D62C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCED21F22EC25001D62C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FDCEAD1F22EC25001D62C5 = {
+			isa = PBXGroup;
+			children = (
+				04FDCEB81F22EC25001D62C5 /* Zalora Testing */,
+				04FDCECD1F22EC25001D62C5 /* Zalora TestingTests */,
+				04FDCED81F22EC25001D62C5 /* Zalora TestingUITests */,
+				04FDCEB71F22EC25001D62C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FDCEB71F22EC25001D62C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FDCEB61F22EC25001D62C5 /* Zalora Testing.app */,
+				04FDCECA1F22EC25001D62C5 /* Zalora TestingTests.xctest */,
+				04FDCED51F22EC25001D62C5 /* Zalora TestingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FDCEB81F22EC25001D62C5 /* Zalora Testing */ = {
+			isa = PBXGroup;
+			children = (
+				04FDCEB91F22EC25001D62C5 /* AppDelegate.swift */,
+				04FDCEBB1F22EC25001D62C5 /* ViewController.swift */,
+				04FDCEBD1F22EC25001D62C5 /* Main.storyboard */,
+				04FDCEC01F22EC25001D62C5 /* Assets.xcassets */,
+				04FDCEC21F22EC25001D62C5 /* LaunchScreen.storyboard */,
+				04FDCEC51F22EC25001D62C5 /* Info.plist */,
+			);
+			path = "Zalora Testing";
+			sourceTree = "<group>";
+		};
+		04FDCECD1F22EC25001D62C5 /* Zalora TestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FDCECE1F22EC25001D62C5 /* Zalora_TestingTests.swift */,
+				04FDCED01F22EC25001D62C5 /* Info.plist */,
+			);
+			path = "Zalora TestingTests";
+			sourceTree = "<group>";
+		};
+		04FDCED81F22EC25001D62C5 /* Zalora TestingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FDCED91F22EC25001D62C5 /* Zalora_TestingUITests.swift */,
+				04FDCEDB1F22EC25001D62C5 /* Info.plist */,
+			);
+			path = "Zalora TestingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FDCEB51F22EC25001D62C5 /* Zalora Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FDCEDE1F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora Testing" */;
+			buildPhases = (
+				04FDCEB21F22EC25001D62C5 /* Sources */,
+				04FDCEB31F22EC25001D62C5 /* Frameworks */,
+				04FDCEB41F22EC25001D62C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zalora Testing";
+			productName = "Zalora Testing";
+			productReference = 04FDCEB61F22EC25001D62C5 /* Zalora Testing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FDCEC91F22EC25001D62C5 /* Zalora TestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FDCEE11F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora TestingTests" */;
+			buildPhases = (
+				04FDCEC61F22EC25001D62C5 /* Sources */,
+				04FDCEC71F22EC25001D62C5 /* Frameworks */,
+				04FDCEC81F22EC25001D62C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FDCECC1F22EC25001D62C5 /* PBXTargetDependency */,
+			);
+			name = "Zalora TestingTests";
+			productName = "Zalora TestingTests";
+			productReference = 04FDCECA1F22EC25001D62C5 /* Zalora TestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FDCED41F22EC25001D62C5 /* Zalora TestingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FDCEE41F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora TestingUITests" */;
+			buildPhases = (
+				04FDCED11F22EC25001D62C5 /* Sources */,
+				04FDCED21F22EC25001D62C5 /* Frameworks */,
+				04FDCED31F22EC25001D62C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FDCED71F22EC25001D62C5 /* PBXTargetDependency */,
+			);
+			name = "Zalora TestingUITests";
+			productName = "Zalora TestingUITests";
+			productReference = 04FDCED51F22EC25001D62C5 /* Zalora TestingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FDCEAE1F22EC25001D62C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Htuinngh;
+				TargetAttributes = {
+					04FDCEB51F22EC25001D62C5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S9EZ97U36M;
+						ProvisioningStyle = Automatic;
+					};
+					04FDCEC91F22EC25001D62C5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S9EZ97U36M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04FDCEB51F22EC25001D62C5;
+					};
+					04FDCED41F22EC25001D62C5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S9EZ97U36M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04FDCEB51F22EC25001D62C5;
+					};
+				};
+			};
+			buildConfigurationList = 04FDCEB11F22EC25001D62C5 /* Build configuration list for PBXProject "Zalora Testing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FDCEAD1F22EC25001D62C5;
+			productRefGroup = 04FDCEB71F22EC25001D62C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FDCEB51F22EC25001D62C5 /* Zalora Testing */,
+				04FDCEC91F22EC25001D62C5 /* Zalora TestingTests */,
+				04FDCED41F22EC25001D62C5 /* Zalora TestingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FDCEB41F22EC25001D62C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDCEC41F22EC25001D62C5 /* LaunchScreen.storyboard in Resources */,
+				04FDCEC11F22EC25001D62C5 /* Assets.xcassets in Resources */,
+				04FDCEBF1F22EC25001D62C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCEC81F22EC25001D62C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCED31F22EC25001D62C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FDCEB21F22EC25001D62C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDCEBC1F22EC25001D62C5 /* ViewController.swift in Sources */,
+				04FDCEBA1F22EC25001D62C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCEC61F22EC25001D62C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDCECF1F22EC25001D62C5 /* Zalora_TestingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FDCED11F22EC25001D62C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FDCEDA1F22EC25001D62C5 /* Zalora_TestingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FDCECC1F22EC25001D62C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FDCEB51F22EC25001D62C5 /* Zalora Testing */;
+			targetProxy = 04FDCECB1F22EC25001D62C5 /* PBXContainerItemProxy */;
+		};
+		04FDCED71F22EC25001D62C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FDCEB51F22EC25001D62C5 /* Zalora Testing */;
+			targetProxy = 04FDCED61F22EC25001D62C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04FDCEBD1F22EC25001D62C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FDCEBE1F22EC25001D62C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04FDCEC21F22EC25001D62C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04FDCEC31F22EC25001D62C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04FDCEDC1F22EC25001D62C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FDCEDD1F22EC25001D62C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FDCEDF1F22EC25001D62C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora Testing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-Testing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		04FDCEE01F22EC25001D62C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora Testing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-Testing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		04FDCEE21F22EC25001D62C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora TestingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-TestingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zalora Testing.app/Zalora Testing";
+			};
+			name = Debug;
+		};
+		04FDCEE31F22EC25001D62C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora TestingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-TestingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zalora Testing.app/Zalora Testing";
+			};
+			name = Release;
+		};
+		04FDCEE51F22EC25001D62C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora TestingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-TestingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zalora Testing";
+			};
+			name = Debug;
+		};
+		04FDCEE61F22EC25001D62C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S9EZ97U36M;
+				INFOPLIST_FILE = "Zalora TestingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htuinngh.Zalora-TestingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zalora Testing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FDCEB11F22EC25001D62C5 /* Build configuration list for PBXProject "Zalora Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDCEDC1F22EC25001D62C5 /* Debug */,
+				04FDCEDD1F22EC25001D62C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FDCEDE1F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDCEDF1F22EC25001D62C5 /* Debug */,
+				04FDCEE01F22EC25001D62C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04FDCEE11F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora TestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDCEE21F22EC25001D62C5 /* Debug */,
+				04FDCEE31F22EC25001D62C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04FDCEE41F22EC25001D62C5 /* Build configuration list for PBXNativeTarget "Zalora TestingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FDCEE51F22EC25001D62C5 /* Debug */,
+				04FDCEE61F22EC25001D62C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FDCEAE1F22EC25001D62C5 /* Project object */;
+}
