@@ -21,9 +21,19 @@ class Zalora_TestingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSplitStringResultCount() {
+        
+        // Sorry, I dont have exp for unit test
+        let inputString = "I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself."
+        let messages = inputString.splitByLength(Config.limitedLength)
+        
+        XCTAssertEqual(messages.count, 20, "Split message get wrong result")
+        
+        for message in messages {
+            
+            XCTAssertLessThanOrEqual(message.characters.count, Config.limitedLength, "Split message get wrong expect result")
+        }
+        
     }
     
     func testPerformanceExample() {

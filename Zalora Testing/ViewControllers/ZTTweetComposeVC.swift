@@ -78,9 +78,19 @@ class ZTTweetComposeVC: UIViewController {
             return
         }
         
+        self.view.endEditing(true)
+        
         let messages : [String] = self.composeTV.text.splitByLength(Config.limitedLength)
         
-        self.tweetMessages(messages: messages)
+        if messages.count > 0 {
+            self.composeTV.text = nil
+            self.tweetMessages(messages: messages)
+        }
+        else
+        {
+            self .showInvalidMessageAlert()
+        }
+        
     }
     
     // MARK: - Methods
@@ -99,10 +109,17 @@ class ZTTweetComposeVC: UIViewController {
     }
     
     func tweetMessages(messages: [String]) {
-        let tweetSheet: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        tweetSheet.setInitialText("Look at this nice picture!")
         
-        tweetSheet.completionHandler = { (result:SLComposeViewControllerResult) -> Void in
+        if messages.count == 0 {
+            return
+        }
+        
+        var tempMessages: [String] = messages
+        let message = tempMessages[0]
+        
+        let tweetSheet: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        tweetSheet.setInitialText(message)
+        tweetSheet.completionHandler = { (result:SLComposeViewControllerResult) -> Void  in
             switch result {
             case .cancelled:
                 print("Cancelled") // Never gets called
@@ -110,12 +127,19 @@ class ZTTweetComposeVC: UIViewController {
                 
             case .done:
                 print("Done")
+                
+                tempMessages.remove(at: 0)
+                self.sentMessages.insert(message, at: 0)
+                self.sentTableView.reloadData()
+                
+                self.perform(#selector(self.tweetMessages(messages:)), with: tempMessages, afterDelay: 0.3)
+                
                 break
+                
             }
         }
         
-        
-        self.present(tweetSheet, animated: true, completion: { })
+        self.present(tweetSheet, animated: true, completion: nil)
     }
 }
 
@@ -124,8 +148,9 @@ extension ZTTweetComposeVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 60
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -133,7 +158,9 @@ extension ZTTweetComposeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SentMessageTableViewCell", for: indexPath)
+        cell.textLabel?.text = self.sentMessages[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     

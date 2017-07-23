@@ -12,6 +12,8 @@
 		044377C91F23099200CA2020 /* ZTTweetComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEED1F22F163001D62C5 /* ZTTweetComposeVC.swift */; };
 		044377CA1F23099300CA2020 /* ZTTweetComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEED1F22F163001D62C5 /* ZTTweetComposeVC.swift */; };
 		044377CB1F23099300CA2020 /* ZTTweetComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEED1F22F163001D62C5 /* ZTTweetComposeVC.swift */; };
+		04F4D9B71F243AE8009F031D /* ZTConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044377C71F22FBF200CA2020 /* ZTConfig.swift */; };
+		04F4D9B81F243AEC009F031D /* ZTStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044377C51F22F4D300CA2020 /* ZTStringExtension.swift */; };
 		04FDCEBA1F22EC25001D62C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FDCEB91F22EC25001D62C5 /* AppDelegate.swift */; };
 		04FDCEBF1F22EC25001D62C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCEBD1F22EC25001D62C5 /* Main.storyboard */; };
 		04FDCEC11F22EC25001D62C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FDCEC01F22EC25001D62C5 /* Assets.xcassets */; };
@@ -306,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F4D9B81F243AEC009F031D /* ZTStringExtension.swift in Sources */,
 				04FDCECF1F22EC25001D62C5 /* Zalora_TestingTests.swift in Sources */,
 				044377CA1F23099300CA2020 /* ZTTweetComposeVC.swift in Sources */,
+				04F4D9B71F243AE8009F031D /* ZTConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,31 +19,30 @@ extension String {
         
         // Predicting number messages in results
         var countPredict = self.characters.count/(length - indicatorLength)
-        print("Count Predict \(countPredict)")
         
         // We will loop countPredict until find result or reach string length.
         while countPredict < self.characters.count {
             let results = self.split_(length, indicatorLength, groups)
             
-            print("Result \(results)")
             
             // Invalid character
             if results.count == 0 {
                 return results
             }
             
+            // Validate results
             if self.verifyMessages(results, length) {
                 return results
             }
             else
             {
-                // Increase pridict count
+                // Increase predict count
                 while countPredict < self.characters.count {
                     countPredict += 1
-                    print("New Count Predict \(countPredict)")
                     let calculated = self.calculateMinOfIndicatorText(countPredict)
                     
-                    print("Calculated \(calculated)")
+                    
+                    // If length of predict count changed, should update indicator length then loop again.
                     if calculated > indicatorLength{
                         indicatorLength = calculated
                         break
@@ -76,8 +75,6 @@ extension String {
     }
     
     private func split_(_ length: Int,_ indicatorLength: Int, _ groups: [String]) -> [String] {
-        
-        print("Run split_")
         
         var results = [String]()
         
