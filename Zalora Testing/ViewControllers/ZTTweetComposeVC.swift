@@ -80,15 +80,43 @@ class ZTTweetComposeVC: UIViewController {
         
         self.view.endEditing(true)
         
-        let messages : [String] = self.composeTV.text.splitByLength(Config.limitedLength)
-        
-        if messages.count > 0 {
-            self.composeTV.text = nil
-            self.tweetMessages(messages: messages)
+        // Sent immediately if text shorter than limit value
+        if composeTV.text.characters.count <= Config.limitedLength {
+            self.tweetMessages(messages: [composeTV.text])
         }
-        else
-        {
-            self .showInvalidMessageAlert()
+        else {
+            
+            let messages : [String] = self.composeTV.text.splitByLength(Config.limitedLength)
+            if messages.count > 0 {
+                
+                let temporaryString = self.composeTV.text
+                
+                self.composeTV.text = messages.joined(separator: "\n")
+                
+                let alertVC : UIAlertController = UIAlertController(title: "Notice",
+                                                                    message: "Your tweet too long, Do you want to send \(messages.count) tweets instead?", preferredStyle: .alert)
+                let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel",
+                                                               style: .cancel) {[unowned self] (action) in
+                                                                self.composeTV.text = temporaryString
+                }
+                
+                let okAction: UIAlertAction = UIAlertAction(title: "OK",
+                                                            style: .default,
+                                                            handler: { [unowned self]  (action) in
+                                                                
+                                                                self.tweetMessages(messages: messages)
+                })
+                alertVC.addAction(cancelAction)
+                alertVC.addAction(okAction)
+                self.present(alertVC, animated: true, completion: {
+                    
+                })
+            
+            }
+            else
+            {
+                self .showInvalidMessageAlert()
+            }
         }
         
     }
@@ -111,6 +139,7 @@ class ZTTweetComposeVC: UIViewController {
     func tweetMessages(messages: [String]) {
         
         if messages.count == 0 {
+            self.composeTV.text = nil
             return
         }
         
@@ -119,10 +148,10 @@ class ZTTweetComposeVC: UIViewController {
         
         let tweetSheet: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         tweetSheet.setInitialText(message)
-        tweetSheet.completionHandler = { (result:SLComposeViewControllerResult) -> Void  in
+        tweetSheet.completionHandler = {[unowned self] (result:SLComposeViewControllerResult) -> Void  in
             switch result {
             case .cancelled:
-                print("Cancelled") // Never gets called
+                print("Cancelled")
                 break
                 
             case .done:
@@ -132,7 +161,8 @@ class ZTTweetComposeVC: UIViewController {
                 self.sentMessages.insert(message, at: 0)
                 self.sentTableView.reloadData()
                 
-                self.perform(#selector(self.tweetMessages(messages:)), with: tempMessages, afterDelay: 0.3)
+                // TODO: Need improve
+                self.perform(#selector(self.tweetMessages(messages:)), with: tempMessages, afterDelay: 0.5)
                 
                 break
                 
@@ -148,6 +178,22 @@ extension ZTTweetComposeVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let rect = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 40)
+        let headerView = UIView(frame: rect)
+        headerView.backgroundColor = UIColor.lightGray
+        
+        let titleLabel = UILabel(frame: CGRect(x: 20, y: 5, width: tableView.frame.width - 2*20, height: 30))
+        titleLabel.backgroundColor = UIColor.clear
+        titleLabel.text = "Sent messages"
+        titleLabel.textColor = UIColor.white
+        headerView.addSubview(titleLabel)
+        return headerView
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60

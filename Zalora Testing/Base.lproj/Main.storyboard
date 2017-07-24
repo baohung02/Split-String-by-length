@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fwv-Dd-byV">
-                                <rect key="frame" x="16" y="72" width="343" height="120"/>
+                                <rect key="frame" x="16" y="72" width="343" height="113"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.60089362157534243" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Ap5-uQ-bLg"/>
+                                    <constraint firstAttribute="height" constant="113" id="Ap5-uQ-bLg"/>
                                 </constraints>
                                 <color key="textColor" red="0.12549019610000001" green="0.4941176471" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -40,10 +40,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentMessageTableViewCell" id="191-2J-VSl">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="191-2J-VSl" id="sAT-DN-AzA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -80,7 +80,7 @@
                             <constraint firstItem="fwv-Dd-byV" firstAttribute="trailing" secondItem="qpT-eQ-YrU" secondAttribute="trailing" constant="-16" id="RO1-UI-JCp"/>
                             <constraint firstItem="fwv-Dd-byV" firstAttribute="centerX" secondItem="lQZ-yc-bGd" secondAttribute="centerX" id="g7v-9C-RzA"/>
                             <constraint firstItem="fwv-Dd-byV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="r9V-io-p6k"/>
-                            <constraint firstItem="lQZ-yc-bGd" firstAttribute="top" secondItem="fwv-Dd-byV" secondAttribute="bottom" constant="8" symbolic="YES" id="xpu-Db-S1c"/>
+                            <constraint firstItem="lQZ-yc-bGd" firstAttribute="top" secondItem="fwv-Dd-byV" secondAttribute="bottom" constant="15" id="xpu-Db-S1c"/>
                             <constraint firstItem="fwv-Dd-byV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ynt-DU-BqC"/>
                         </constraints>
                     </view>
